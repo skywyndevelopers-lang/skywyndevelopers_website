@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/skywyn_website/", // 👈 important for GitHub Pages (repo name)
+  base: "/skywyn_website/", // 👈 GitHub Pages project repo
   server: {
     host: "::",
     port: 8080,
@@ -15,5 +15,10 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+  },
+  build: {
+    outDir: "dist",
+    assetsDir: "assets",
+    sourcemap: true, // optional, helps with debugging
   },
 }));
