@@ -71,14 +71,14 @@ const Footer = () => {
                 className="flex items-center text-[#EAEAEA]/80 hover:text-[#FFD700] transition-smooth group"
               >
                 <Phone size={18} className="mr-3 group-hover:scale-110 transition-transform" />
-                <span>9539409539</span>
+                <span>9539 40 9539</span>
               </a>
               <a
-                href="mailto:skywynrealestate@gmail.com"
+                href="mailto:skywyndevelopers@gmail.com"
                 className="flex items-center text-[#EAEAEA]/80 hover:text-[#FFD700] transition-smooth group"
               >
                 <Mail size={18} className="mr-3 group-hover:scale-110 transition-transform" />
-                <span>skywynrealestate@gmail.com</span>
+                <span>skywyndevelopers@gmail.com</span>
               </a>
               <div className="pt-2">
                 <p className="text-sm text-[#EAEAEA]/60 mb-3">Follow us:</p>
