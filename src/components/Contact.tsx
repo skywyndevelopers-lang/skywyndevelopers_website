@@ -35,17 +35,17 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Create WhatsApp message
     const whatsappMessage = `Hello! I'm ${formData.name}.\n\nEmail: ${formData.email}\n\nMessage: ${formData.message}`;
     const whatsappUrl = `https://wa.me/919539409539?text=${encodeURIComponent(whatsappMessage)}`;
-    
+
     // Open WhatsApp
     window.open(whatsappUrl, "_blank");
-            
+
     // Show success toast
     toast.success("Opening WhatsApp...");
-    
+
     // Reset form
     setFormData({ name: "", email: "", message: "" });
   };
@@ -72,7 +72,9 @@ const Contact = () => {
                 <Input
                   placeholder="Your Name"
                   value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, name: e.target.value })
+                  }
                   required
                   className="bg-background"
                 />
@@ -82,7 +84,9 @@ const Contact = () => {
                   type="email"
                   placeholder="Your Email"
                   value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, email: e.target.value })
+                  }
                   required
                   className="bg-background"
                 />
@@ -91,7 +95,9 @@ const Contact = () => {
                 <Textarea
                   placeholder="Your Message"
                   value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, message: e.target.value })
+                  }
                   required
                   rows={5}
                   className="bg-background resize-none"
@@ -120,7 +126,9 @@ const Contact = () => {
                         <Icon className="text-primary-foreground" size={24} />
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground">{info.label}</p>
+                        <p className="text-sm text-muted-foreground">
+                          {info.label}
+                        </p>
                         <p className="font-semibold">{info.value}</p>
                       </div>
                     </div>
