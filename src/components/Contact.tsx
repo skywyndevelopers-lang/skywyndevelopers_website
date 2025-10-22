@@ -9,14 +9,14 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone & WhatsApp",
-    value: "9539409539",
+    value: "9539 40 9539",
     href: "tel:9539409539",
   },
   {
     icon: Mail,
     label: "Email",
-    value: "skywynrealestate@gmail.com",
-    href: "mailto:skywynrealestate@gmail.com",
+    value: "skywyndevelopers@gmail.com",
+    href: "mailto:skywyndevelopers@gmail.com",
   },
   {
     icon: MapPin,
