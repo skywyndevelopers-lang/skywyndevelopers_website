@@ -31,22 +31,23 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Column 1 - Brand Info */}
           <div>
-            <img 
-              src={skywynLogo} 
-              alt="Skywyn Logo" 
+            <img
+              src={skywynLogo}
+              alt="Skywyn Logo"
               className="h-14 w-auto mb-4"
             />
             <p className="text-[#EAEAEA]/80 leading-relaxed mb-3">
-              From Land to Legacy — blending nature, design, and trust in every project.
+              From Land to Legacy — blending nature, design, and trust in every
+              project.
             </p>
-            <p className="text-sm text-[#C9A227]">
-              Based in Wayanad, Kerala
-            </p>
+            <p className="text-sm text-[#C9A227]">Based in Wayanad, Kerala</p>
           </div>
 
           {/* Column 2 - Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold text-[#C9A227] mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold text-[#C9A227] mb-4">
+              Quick Links
+            </h3>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.id}>
@@ -64,27 +65,35 @@ const Footer = () => {
 
           {/* Column 3 - Contact */}
           <div>
-            <h3 className="text-lg font-semibold text-[#C9A227] mb-4">Contact</h3>
+            <h3 className="text-lg font-semibold text-[#C9A227] mb-4">
+              Contact
+            </h3>
             <div className="space-y-4">
               <a
                 href="tel:9539409539"
                 className="flex items-center text-[#EAEAEA]/80 hover:text-[#FFD700] transition-smooth group"
               >
-                <Phone size={18} className="mr-3 group-hover:scale-110 transition-transform" />
+                <Phone
+                  size={18}
+                  className="mr-3 group-hover:scale-110 transition-transform"
+                />
                 <span>9539 40 9539</span>
               </a>
               <a
                 href="mailto:skywyndevelopers@gmail.com"
                 className="flex items-center text-[#EAEAEA]/80 hover:text-[#FFD700] transition-smooth group"
               >
-                <Mail size={18} className="mr-3 group-hover:scale-110 transition-transform" />
+                <Mail
+                  size={18}
+                  className="mr-3 group-hover:scale-110 transition-transform"
+                />
                 <span>skywyndevelopers@gmail.com</span>
               </a>
               <div className="pt-2">
                 <p className="text-sm text-[#EAEAEA]/60 mb-3">Follow us:</p>
                 <div className="flex space-x-4">
                   <a
-                    href="https://instagram.com"
+                    href="https://instagram.com/skywyn"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#C9A227] hover:text-[#FFD700] transition-smooth hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,215,0,0.6)]"
@@ -92,7 +101,7 @@ const Footer = () => {
                     <Instagram size={24} />
                   </a>
                   <a
-                    href="https://facebook.com"
+                    href="https://facebook.com/skywyn"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#C9A227] hover:text-[#FFD700] transition-smooth hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,215,0,0.6)]"
@@ -106,11 +115,15 @@ const Footer = () => {
 
           {/* Column 4 - Legal / License */}
           <div>
-            <h3 className="text-lg font-semibold text-[#C9A227] mb-4">Legal & Licensing</h3>
+            <h3 className="text-lg font-semibold text-[#C9A227] mb-4">
+              Legal & Licensing
+            </h3>
             <div className="space-y-2 text-sm text-[#EAEAEA]/70">
               <p>© 2025 Skywyn Developers</p>
               <p>All Rights Reserved</p>
-              <p className="pt-2">Licensed & Registered Real Estate Developers – Wayanad</p>
+              <p className="pt-2">
+                Licensed & Registered Real Estate Developers – Wayanad
+              </p>
               <p className="text-[#C9A227]/80">Reg. No: WYD/REAL/2025/079</p>
             </div>
           </div>
