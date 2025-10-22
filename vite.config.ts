@@ -5,12 +5,12 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/skywyn_website/", // 👈 important for GitHub Pages (repo name)
   server: {
     host: "::",
     port: 8080,
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
-  base: "/skywyn_project",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

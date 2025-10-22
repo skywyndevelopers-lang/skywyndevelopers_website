@@ -9,90 +9,127 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 const testimonials = [
   {
-    name: "Rajesh Kumar",
-    location: "Wayanad",
+    name: "Arjun R",
+    location: "Bengaluru, Karnataka",
     rating: 5,
-    review: "Skywyn helped us find the perfect plot in Wayanad. Their expertise in land development and transparent approach made the entire process smooth. Highly recommended!",
-    image: "RK"
+    review: "Skywyn made my first property purchase completely stress-free. Their team is professional, friendly, and highly knowledgeable about local areas.",
+    image: "AR",
+    bgColor: "bg-[#0a1d37]" // Navy blue tone
   },
   {
-    name: "Priya Menon",
-    location: "Kalpetta",
+    name: "Nisha Patel",
+    location: "Ahmedabad, Gujarat",
     rating: 5,
-    review: "We built our dream home with Skywyn. From design to construction, every detail was handled with care and professionalism. The quality of work exceeded our expectations.",
-    image: "PM"
+    review: "Excellent service! The Skywyn team guided us with honesty and patience. They helped us find a plot that matched exactly what we wanted.",
+    image: "NP",
+    bgColor: "bg-[#142c54]"
   },
   {
-    name: "Arun Thomas",
-    location: "Sulthan Bathery",
-    rating: 5,
-    review: "Best real estate consultants in Wayanad! They understood our requirements perfectly and delivered beyond what we imagined. True professionals who build trust.",
-    image: "AT"
-  },
-  {
-    name: "Sangeetha R",
-    location: "Vythiri",
-    rating: 5,
-    review: "Skywyn made our home buying experience effortless. Their team guided us at every step. Amazing service!",
-    image: "SR"
-  },
-  {
-    name: "Manoj Kumar",
-    location: "Meppadi",
+    name: "Rahul Verma",
+    location: "Delhi NCR",
     rating: 4,
-    review: "Great experience overall. Very professional and responsive. Would recommend for land deals in Wayanad.",
-    image: "MK"
+    review: "Smooth process from start to finish. The only delay was in document verification, but everything else was handled very professionally.",
+    image: "RV",
+    bgColor: "bg-[#1d3b73]"
   },
   {
-    name: "Anjali Nair",
-    location: "Kalpetta",
+    name: "Sneha S",
+    location: "Kochi, Kerala",
     rating: 5,
-    review: "From consultation to completion, everything was smooth. Skywyn is trustworthy and highly professional.",
-    image: "AN"
+    review: "Skywyn helped us purchase a property in Wayanad. The team’s communication and attention to detail were excellent throughout the process.",
+    image: "SS",
+    bgColor: "bg-[#0f274a]"
   },
   {
-    name: "Ramesh P",
-    location: "Sulthan Bathery",
+    name: "Harish Kumar",
+    location: "Hyderabad, Telangana",
     rating: 5,
-    review: "Excellent guidance on land investment. Transparent and reliable. Couldn't ask for better service.",
-    image: "RP"
+    review: "The Skywyn staff are very polite and professional. They understood our requirements perfectly and found the right property within budget.",
+    image: "HK",
+    bgColor: "bg-[#102a4d]"
   },
   {
-    name: "Leena Jose",
-    location: "Wayanad",
+    name: "Pooja Sharma",
+    location: "Chandigarh",
     rating: 5,
-    review: "The team at Skywyn is extremely knowledgeable. They helped us pick the perfect plot. Highly recommended!",
-    image: "LJ"
+    review: "Superb experience! Transparent pricing, quick response, and genuine guidance. Definitely one of the best real estate teams we’ve worked with.",
+    image: "PS",
+    bgColor: "bg-[#132f57]"
   },
   {
-    name: "Vishnu S",
-    location: "Kalpetta",
+    name: "Vivek Menon",
+    location: "Kozhikode, Kerala",
+    rating: 5,
+    review: "Highly trustworthy and efficient team. Skywyn handled everything — from land verification to registration — perfectly.",
+    image: "VM",
+    bgColor: "bg-[#0c2241]"
+  },
+  {
+    name: "Ritika Das",
+    location: "Kolkata, West Bengal",
     rating: 4,
-    review: "Good service, friendly team. Slight delay in documentation but overall very satisfied.",
-    image: "VS"
+    review: "Very cooperative and professional staff. There was a small delay in communication, but they delivered exactly what they promised.",
+    image: "RD",
+    bgColor: "bg-[#1c386c]"
   },
   {
-    name: "Deepa M",
-    location: "Meppadi",
+    name: "Mohammed Irfan",
+    location: "Chennai, Tamil Nadu",
     rating: 5,
-    review: "They made buying land a pleasant experience. Professional, reliable, and trustworthy.",
-    image: "DM"
+    review: "I was impressed by their knowledge and clear guidance. Skywyn helped us make the right decision with full transparency.",
+    image: "MI",
+    bgColor: "bg-[#102a4d]"
   },
   {
-    name: "Arjun K",
-    location: "Vythiri",
+    name: "Rohit Sharma",
+    location: "Pune, Maharashtra",
     rating: 5,
-    review: "Best real estate consultants ever. They explained everything clearly and guided us perfectly.",
-    image: "AK"
+    review: "Skywyn’s professionalism really stands out. They made sure everything was perfect before finalizing the deal. Truly satisfied!",
+    image: "RS",
+    bgColor: "bg-[#0a1f3e]"
   },
   {
-    name: "Shalini R",
-    location: "Kalpetta",
+    name: "Divya Krishnan",
+    location: "Thiruvananthapuram, Kerala",
     rating: 5,
-    review: "I am extremely happy with their services. Highly recommended for anyone looking to invest in Wayanad.",
-    image: "SR"
+    review: "Their team guided us like family. Every step was explained clearly, and we felt confident throughout the entire process.",
+    image: "DK",
+    bgColor: "bg-[#122b51]"
   },
+  {
+    name: "Karan Mehta",
+    location: "Mumbai, Maharashtra",
+    rating: 5,
+    review: "Skywyn gave us a great experience. They were transparent, responsive, and completely reliable from start to finish.",
+    image: "KM",
+    bgColor: "bg-[#1a3667]"
+  },
+  {
+    name: "Anand Raj",
+    location: "Mysuru, Karnataka",
+    rating: 5,
+    review: "Their professionalism and quality of service are top-notch. Skywyn truly values its customers and delivers what they promise.",
+    image: "ARJ",
+    bgColor: "bg-[#132f57]"
+  },
+  {
+    name: "Neha Gupta",
+    location: "Lucknow, Uttar Pradesh",
+    rating: 4,
+    review: "Good experience overall. The process took some time, but the end result and support from Skywyn made it worth it.",
+    image: "NG",
+    bgColor: "bg-[#0e2545]"
+  },
+  {
+    name: "Joseph Mathew",
+    location: "Ernakulam, Kerala",
+    rating: 5,
+    review: "I’m fully satisfied with their work. The Skywyn team is friendly, helpful, and delivers on time. Highly recommended!",
+    image: "JM",
+    bgColor: "bg-[#0b2040]"
+  }
 ];
+
 const Testimonials = () => {
   return (
     <section id="testimonials" className="py-20 lg:py-32 bg-background">
