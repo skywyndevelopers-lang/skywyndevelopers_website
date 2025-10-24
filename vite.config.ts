@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/skywyn_website/", // 👈 GitHub Pages project repo
+  base: "/", // 👈 GitHub Pages project repo
   server: {
     host: "::",
     port: 8080,
