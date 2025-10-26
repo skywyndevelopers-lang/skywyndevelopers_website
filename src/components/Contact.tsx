@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin, Instagram, Facebook } from "lucide-react";
 import { toast } from "sonner";
 
+// Contact information
 const contactInfo = [
   {
     icon: Phone,
@@ -26,6 +27,18 @@ const contactInfo = [
   },
 ];
 
+// Social links
+const socialLinks = [
+  {
+    icon: Instagram,
+    href: "https://www.instagram.com/skywyn_developers?igsh=MXVqdXQ3ZWRkMHpvZQ%3D%3D&utm_source=qr",
+  },
+  {
+    icon: Facebook,
+    href: "https://www.facebook.com/share/19eSDgBNiV/?mibextid=wwXIfr",
+  },
+];
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -36,17 +49,13 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Create WhatsApp message
     const whatsappMessage = `Hello! I'm ${formData.name}.\n\nEmail: ${formData.email}\n\nMessage: ${formData.message}`;
-    const whatsappUrl = `https://wa.me/919539409539?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappUrl = `https://wa.me/919539409539?text=${encodeURIComponent(
+      whatsappMessage
+    )}`;
 
-    // Open WhatsApp
     window.open(whatsappUrl, "_blank");
-
-    // Show success toast
     toast.success("Opening WhatsApp...");
-
-    // Reset form
     setFormData({ name: "", email: "", message: "" });
   };
 
@@ -55,9 +64,7 @@ const Contact = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-accent font-semibold text-lg">Get in Touch</span>
-          <h2 className="text-4xl lg:text-5xl font-bold mt-2 mb-6">
-            Contact Us
-          </h2>
+          <h2 className="text-4xl lg:text-5xl font-bold mt-2 mb-6">Contact Us</h2>
           <p className="text-muted-foreground text-lg">
             Ready to start your journey? Let's discuss your dream project
           </p>
@@ -68,41 +75,35 @@ const Contact = () => {
           <div className="bg-card rounded-2xl shadow-soft p-8">
             <h3 className="text-2xl font-bold mb-6">Send us a Message</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <Input
-                  placeholder="Your Name"
-                  value={formData.name}
-                  onChange={(e) =>
-                    setFormData({ ...formData, name: e.target.value })
-                  }
-                  required
-                  className="bg-background"
-                />
-              </div>
-              <div>
-                <Input
-                  type="email"
-                  placeholder="Your Email"
-                  value={formData.email}
-                  onChange={(e) =>
-                    setFormData({ ...formData, email: e.target.value })
-                  }
-                  required
-                  className="bg-background"
-                />
-              </div>
-              <div>
-                <Textarea
-                  placeholder="Your Message"
-                  value={formData.message}
-                  onChange={(e) =>
-                    setFormData({ ...formData, message: e.target.value })
-                  }
-                  required
-                  rows={5}
-                  className="bg-background resize-none"
-                />
-              </div>
+              <Input
+                placeholder="Your Name"
+                value={formData.name}
+                onChange={(e) =>
+                  setFormData({ ...formData, name: e.target.value })
+                }
+                required
+                className="bg-background"
+              />
+              <Input
+                type="email"
+                placeholder="Your Email"
+                value={formData.email}
+                onChange={(e) =>
+                  setFormData({ ...formData, email: e.target.value })
+                }
+                required
+                className="bg-background"
+              />
+              <Textarea
+                placeholder="Your Message"
+                value={formData.message}
+                onChange={(e) =>
+                  setFormData({ ...formData, message: e.target.value })
+                }
+                required
+                rows={5}
+                className="bg-background resize-none"
+              />
               <Button
                 type="submit"
                 className="w-full gradient-gold text-foreground font-semibold shadow-gold hover:scale-105 transition-smooth"
@@ -126,9 +127,7 @@ const Contact = () => {
                         <Icon className="text-primary-foreground" size={24} />
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground">
-                          {info.label}
-                        </p>
+                        <p className="text-sm text-muted-foreground">{info.label}</p>
                         <p className="font-semibold">{info.value}</p>
                       </div>
                     </div>
@@ -149,22 +148,20 @@ const Contact = () => {
             <div>
               <h3 className="text-xl font-bold mb-4">Follow Us</h3>
               <div className="flex space-x-4">
-                <a
-                  href="https://instagram.com/skywyn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 gradient-gold rounded-xl flex items-center justify-center hover:scale-110 transition-smooth shadow-gold"
-                >
-                  <Instagram className="text-foreground" size={24} />
-                </a>
-                <a
-                  href="https://facebook.com/skywyn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 gradient-gold rounded-xl flex items-center justify-center hover:scale-110 transition-smooth shadow-gold"
-                >
-                  <Facebook className="text-foreground" size={24} />
-                </a>
+                {socialLinks.map((social, idx) => {
+                  const Icon = social.icon;
+                  return (
+                    <a
+                      key={idx}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-12 h-12 gradient-gold rounded-xl flex items-center justify-center hover:scale-110 transition-smooth shadow-gold"
+                    >
+                      <Icon className="text-foreground" size={24} />
+                    </a>
+                  );
+                })}
               </div>
             </div>
           </div>
