@@ -89,11 +89,13 @@ const Footer = () => {
                 />
                 <span>skywyndevelopers@gmail.com</span>
               </a>
+
+              {/* Social Links */}
               <div className="pt-2">
                 <p className="text-sm text-[#EAEAEA]/60 mb-3">Follow us:</p>
                 <div className="flex space-x-4">
                   <a
-                    href="https://instagram.com/skywyn"
+                    href="https://www.instagram.com/skywyn_developers?igsh=MXVqdXQ3ZWRkMHpvZQ%3D%3D&utm_source=qr"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#C9A227] hover:text-[#FFD700] transition-smooth hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,215,0,0.6)]"
@@ -101,7 +103,7 @@ const Footer = () => {
                     <Instagram size={24} />
                   </a>
                   <a
-                    href="https://facebook.com/skywyn"
+                    href="https://www.facebook.com/share/19eSDgBNiV/?mibextid=wwXIfr"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#C9A227] hover:text-[#FFD700] transition-smooth hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,215,0,0.6)]"
