@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/", // 👈 must match your GitHub repo name
+  base: "/skywyn/", // 👈 must match your GitHub repo name
   server: {
     host: "::",
     port: 8080,

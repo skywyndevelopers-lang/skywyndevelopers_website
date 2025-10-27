@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://skywyndevelopers-lang.github.io/skywyn_developers",
+  "homepage": "https://skywyndevelopers-lang.github.io/skywyn",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -13,6 +13,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
+  "packageManager": "pnpm@7.5.1",
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-accordion": "^1.2.11",

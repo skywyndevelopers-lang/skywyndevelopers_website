@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import { motion } from "framer-motion";
-import heroImage from "@/assets/hero-bg.jpg";
+import heroImage from "@/assets/bgimage2.jpg";
 
 const Hero = () => {
   const openWhatsApp = () => {
@@ -17,8 +17,11 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(180deg, rgba(23, 50, 82, 0.85), rgba(23, 50, 82, 0.6)), url(${heroImage})`,
-        }}
+  backgroundImage: `linear-gradient(180deg, rgba(10, 25, 50, 0.65), rgba(10, 25, 50, 0.45)), url(${heroImage})`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+}}
+
       />
 
       {/* Content */}
