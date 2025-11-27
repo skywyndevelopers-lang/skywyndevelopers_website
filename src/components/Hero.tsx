@@ -5,7 +5,10 @@ import heroImage from "@/assets/bgimage2.jpg";
 
 const Hero = () => {
   const openWhatsApp = () => {
-    window.open("https://wa.me/919539409539?text=Hi%20Skywyn%20Developers!%20I%27m%20interested%20in%20your%20projects.", "_blank");
+    window.open(
+      "https://wa.me/917034344848?text=Hi%20Skywyn%20Developers!%20I%27m%20interested%20in%20your%20projects.",
+      "_blank"
+    );
   };
 
   return (
@@ -17,11 +20,10 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-  backgroundImage: `linear-gradient(180deg, rgba(10, 25, 50, 0.65), rgba(10, 25, 50, 0.45)), url(${heroImage})`,
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-}}
-
+          backgroundImage: `linear-gradient(180deg, rgba(10, 25, 50, 0.65), rgba(10, 25, 50, 0.45)), url(${heroImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
       />
 
       {/* Content */}
@@ -33,9 +35,7 @@ const Hero = () => {
           transition={{ duration: 0.6 }}
           className="mb-5 inline-block"
         >
-          <span className="text-[#FFD700] text-lg md:text-xl font-medium uppercase tracking-widest">
-            
-          </span>
+          <span className="text-[#FFD700] text-lg md:text-xl font-medium uppercase tracking-widest"></span>
         </motion.div>
 
         {/* Main Heading */}
