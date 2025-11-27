@@ -6,7 +6,7 @@ import heroImage from "@/assets/bgimage2.jpg";
 const Hero = () => {
   const openWhatsApp = () => {
     window.open(
-      "https://wa.me/917034344848?text=Hi%20Skywyn%20Developers!%20I%27m%20interested%20in%20your%20projects.",
+      "https://wa.me/917034344848",
       "_blank"
     );
   };
