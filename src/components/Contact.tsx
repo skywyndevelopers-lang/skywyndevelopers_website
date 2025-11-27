@@ -10,8 +10,8 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone & WhatsApp",
-    value: "9539 40 9539",
-    href: "tel:9539409539",
+    value: "70 3434 4848",
+    href: "tel:7034344848",
   },
   {
     icon: Mail,
@@ -50,7 +50,7 @@ const Contact = () => {
     e.preventDefault();
 
     const whatsappMessage = `Hello! I'm ${formData.name}.\n\nEmail: ${formData.email}\n\nMessage: ${formData.message}`;
-    const whatsappUrl = `https://wa.me/919539409539?text=${encodeURIComponent(
+    const whatsappUrl = `https://wa.me/917034344848?text=${encodeURIComponent(
       whatsappMessage
     )}`;
 
