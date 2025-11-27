@@ -70,14 +70,14 @@ const Footer = () => {
             </h3>
             <div className="space-y-4">
               <a
-                href="tel:9539409539"
+                href="tel:7034344848"
                 className="flex items-center text-[#EAEAEA]/80 hover:text-[#FFD700] transition-smooth group"
               >
                 <Phone
                   size={18}
                   className="mr-3 group-hover:scale-110 transition-transform"
                 />
-                <span>9539 40 9539</span>
+                <span>70 3434 4848</span>
               </a>
               <a
                 href="mailto:skywyndevelopers@gmail.com"
